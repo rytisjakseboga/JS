@@ -6,6 +6,12 @@ Numbers:
 - nenormalus:
     - NaN (not-a-number)
     - Infinity; -Infinity
+
+
+OPERATORIAI:
+++ - padidinimas vienu vienetu
+-- - sumazinimas vienu vienetu
++=, -=, /=, *=/ %= - saves paties keitimas ( a = a + --> a += )   
 */
 
 
@@ -65,3 +71,66 @@ console.log(false * 5);
 console.log(false / 5);
 
 
+console.log('--------')
+console.log(2 ** 4);
+console.log(3.14 ** 3.14);
+console.log(7 % 2);
+console.log(4 % 6);
+
+
+
+console.log('--------');
+let pinigineBefore = 0;
+console.log('Pinigine: ' + ++pinigineBefore);
+console.log('Pinigine: ' + ++pinigineBefore);
+console.log('Pinigine: ' + ++pinigineBefore);
+console.log('Pinigine: ' + ++pinigineBefore);
+
+
+console.log('--------');
+let skolaBefore = 0;
+console.log('Pinigine: ',  --skolaBefore);
+console.log('Pinigine: ',  --skolaBefore);
+console.log('Pinigine: ',  --skolaBefore);
+console.log('Pinigine: ',  --skolaBefore);
+
+console.log('--------');
+let skolaAfter = 0;
+console.log('Pinigine: ', skolaAfter--);
+console.log('Pinigine: ', skolaAfter--);
+console.log('Pinigine: ', skolaAfter--);
+console.log('Pinigine: ', skolaAfter--);
+
+
+console.log('-------');
+let a = 0;
+console.log(a);
+a++;
+console.log(a);
+++a;
+console.log(a);
+a = a + 1;
+console.log(a);
+
+console.log('-------');
+let b = 0;
+console.log(b);
+b = b + 3;
+console.log(b);
+b = b++;
+console.log(b);
+b += 3;
+console.log(b);
+
+console.log('-------');
+let c = 16;
+const d = 2;
+console.log(c);
+c /= d;
+console.log(c);
+
+console.log('---------');
+let e = 5;
+console.log(e);
+e %= e;
+console.log(e);
